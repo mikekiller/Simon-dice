@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    background: #23282d;
+    height: 100vh;
+    color: whitesmoke;
+    display: inline;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+}
+h1,h2{
+    text-align: center;
+}
+.gameboard{
+    height: 100vh;
+    width: 100vh;
+    margin:  0 auto;
+    max-width: 60vh;
+    max-height: 60vh;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 5%;
+   position: relative;
+}
+.color{
+    width: 100%;
+    height: 100%;
+
+}
+.left{
+    
+}
+.right{
+   
+}
+.rojo{
+    background: #c72b20;
+    box-shadow: inset -5px 10px 4px 0px rgba(250, 250, 250, .2), inset 8px -5px 4px 0px rgba(250, 250, 250, .2);
+    border-radius: 100% 0 0 0;
+}
+.rojo.light{
+    background: #ff1100;
+    box-shadow: inset -5px 10px 15px 0px #8e150c,
+    inset 8px -5px 4px 0px #8e150c,
+    0px 0px 15px 10px #eb867f,
+    0px 0px 2px 6px #cb1c10;
+}
+.amarillo{
+    background: #ab9e2c;
+    box-shadow: inset 5px 10px 4px 0px rgba(250, 250, 250, .2), inset -8px -5px 4px 0px rgba(250, 250, 250, .2);
+    border-radius: 0 100% 0 0;
+}
+.amarillo.light{
+    background:  #ffed00;
+    box-shadow: inset 5px -10px 15px 0px #cfc112,
+    inset -8px 5px 4px 0px #cfc112,
+    0px 0px 15px 10px #e8da26,
+    0px 0px 2px 6px #e2d966;
+}
+.verde{
+    background: #156c39;
+    box-shadow: inset 5px 10px 4px 0px rgba(250, 250, 250, .2), inset -8px -5px 4px 0px rgba(250, 250, 250, .2);
+    border-radius: 0 0 100% 0;
+}
+.verde.light{
+    background: #05ff00 ;
+    box-shadow: inset -8px -10px 15px 0px #18ac15,
+    inset 8px 5px 4px 0px #18ac15,
+    0px 0px 15px 10px #5af157,
+    0px 0px 8px 6px #84e782;
+}
+.azul{
+    background: #2a8fbd;
+    box-shadow: inset 5px -10px 4px 0px rgba(250, 250, 250, .2), inset -4px 8px 4px 0px rgba(250, 250, 250, .2);
+    border-radius: 0 0 0 100%;
+}
+.azul.light{
+    background: #0085ff;
+    box-shadow: inset -5px -10px 15px 0px #0a62b3,
+    inset 8px 5px 4px 0px #0a62b3,
+    0px 0px 15px 10px #6caae2,
+    0px 0px 2px 6px #2e8be0;
+}
+.btn-start{
+    width: 50%;
+    height: 50%;
+    background: #23282d;
+    color: whitesmoke;
+    font-size: 2.5rem;
+    position: absolute;
+    top: calc(50% - 25%) ;
+    left: calc(50% - 25% );
+    border-radius: 50%;
+    border: transparent;
+    outline: none;
+}
+.hide{
+    color: #23282d;
+    cursor: default !important;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+footer h3{
+    margin-left: 25px;
+}
+
+/*    hover */
+
+.color:hover{
+    cursor: pointer;
+}
+.btn-start:hover{
+    cursor: pointer;
+}

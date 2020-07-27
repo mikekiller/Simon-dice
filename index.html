@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Simon dice</title>
+</head>
+<body>
+    <section class="sonidos">
+        <audio id="sound_do" src="sound/do.wav"></audio>
+        <audio id="sound_re" src="sound/re.wav"></audio>
+        <audio id="sound_mi" src="sound/mi.wav"></audio>
+        <audio id="sound_fa" src="sound/fa.wav"></audio>
+        <audio id="sound_sol" src="sound/sol.wav"></audio>
+    </section>
+        <h1>Simon Dice</h1>
+        <h2 id="comando">Intrucciones</h2>
+        <div class="main-container">
+            <div class="gameboard">
+                <div id="rojo" class="color rojo left" data-color="rojo"></div>
+                <div id="amarillo" class="color amarillo right" data-color="amarillo"></div>
+                <div id="azul" class="color azul left" data-color="azul"></div>
+                <div id="verde" class="color verde right" data-color="verde"></div>
+                <button id="btnEmpezar" class="btn-start" onclick="empezarjuego()">Empezar a Jugar!</button>
+            </div>
+        </div>
+
+      <footer>
+          <h3 id="puntuacion">Puntuacion: <span>0</span></h3>
+          <h3 id="puntuacionA">Puntuacion mas Alta :<span>0</span></h3>
+      </footer>
+       
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="juego.js" ></script>
+</body>
+</html>
